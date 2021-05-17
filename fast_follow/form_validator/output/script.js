@@ -1,22 +1,71 @@
 const form = document.getElementById("myForm");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const pw = document.getElementById("pw");
+const pw2 = document.getElementById("pw2");
 
-function checkEmail (e) { 
-    console.log("checkEmail");
-    alert('hi', e);
-    return true;
+function showErrorMessage(node, message) {
+    node.parentNode.querySelector("small").innerHTML = `<b style='color: red'>${message}</b>`;
 }
 
-function checkPassword () {
-    console.log("checkPassword");
+function removeErrorMessage(node) {
+    node.parentNode.querySelector("small").innerText = "";
 }
 
-function checkPassword2 () {
-    console.log("checkPassword");
+function checkName() {
+    if (requiredValue(name)) {
+        return;
+    }
 }
 
-form.addEventListener("submit", function() {
+function checkEmail(e) { 
+    const regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    if (requiredValue(email)) {
+        return;
+    }
+    if (regex.test(email.value)) {
+        removeErrorMessage(email);
+    } else {
+        showErrorMessage(email, "Wrong Email");
+    }
+}
+
+function checkPW() {
+    if (requiredValue(pw)) {
+        return;
+    }
+}
+
+function checkPW2() {
+    if (requiredValue(pw2)) {
+        return;
+    }
+}
+
+function requiredValue(node) {
+    if (node.value.trim() !== "") {
+        removeErrorMessage(node);
+        return false;
+    } else {
+        showErrorMessage(node, "Empty Value");
+        return true;
+    }
+}
+
+function checkPasswordLength () {
+    console.log("checkPasswordLength");
+}
+
+function confirmPassword () {
+    console.log("confirmPassword");
+}
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
     console.log("submit");
+    checkName();
     checkEmail();
-    checkPassword();
-    checkPassword2();
+    checkPW();
+    checkPW2();
 });
