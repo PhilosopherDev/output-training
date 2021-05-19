@@ -34,10 +34,16 @@ function checkPW() {
     if (requiredValue(pw)) {
         return;
     }
+    if (pwLengthCheck(pw)) {
+        return;
+    }
 }
 
 function checkPW2() {
     if (requiredValue(pw2)) {
+        return;
+    }
+    if (pwLengthCheck(pw2)) {
         return;
     }
 }
@@ -49,6 +55,17 @@ function requiredValue(node) {
     } else {
         showErrorMessage(node, "Empty Value");
         return true;
+    }
+}
+
+function pwLengthCheck(node) {
+    const value = node.value.trim();
+    if (value.length < 6) {
+        showErrorMessage(node, "Password should be longer than 6 letters");
+        return true;
+    } else {
+        removeErrorMessage(node);
+        return false;
     }
 }
 
