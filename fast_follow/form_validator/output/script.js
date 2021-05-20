@@ -46,6 +46,9 @@ function checkPW2() {
     if (pwLengthCheck(pw2)) {
         return;
     }
+    if (pwConfirmCheck()) {
+        return;
+    }
 }
 
 function requiredValue(node) {
@@ -65,6 +68,16 @@ function pwLengthCheck(node) {
         return true;
     } else {
         removeErrorMessage(node);
+        return false;
+    }
+}
+
+function pwConfirmCheck() {
+    if (pw.value !== pw2.value) {
+        showErrorMessage(pw2, "Password is not same");
+        return true;
+    } else {
+        removeErrorMessage(pw2);
         return false;
     }
 }
