@@ -19,6 +19,7 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     padding: 12px;
+    box-shadow: blueviolet 15px 15px;
 }
 
 .label {
