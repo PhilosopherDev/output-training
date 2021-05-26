@@ -19,26 +19,52 @@
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d"); // 2D rendering context
         
-        /* 사각형 */
-        ctx.beginPath(); // start
-        ctx.rect(20, 40, 50, 50); // 첫 번째, 두 번째는 캔버스 좌상단 모서리로부터의 좌표, 세 번째 네번째는 사각형 너비와 높이
-        ctx.fillStyle = "#FF0000"; // fill 에서 칠해질 색상 값 지정
-        ctx.fill();
-        ctx.closePath(); // end
-        
-        /* 원 */
-        ctx.beginPath();
-        ctx.arc(240, 160, 20, 0, Math.PI*2, false); // 6 개의 파라미터, 원의 중심을 가리키는 x, y 좌표, 원의 반지름, 시작 각도와 끝 각도, 그리는 방향(flase = 시계 방향, true = 반시계방향)
-        ctx.fillStyle = "cyan";
-        ctx.fill();
-        ctx.closePath;
+        /* step 2*/
+        var x = canvas.width/4;
+        var y = canvas.height - 300;
+        var dx = 0.2;
+        var dy = 0.2;
+        function drawBall() {
+            ctx.beginPath();
+            ctx.arc(x, y, 10, 0, Math.PI*2);
+            ctx.fillStyle = "#0095DD";
+            ctx.fill();
+            ctx.closePath();
+        }
 
-        /* stroke 로 외곽선 부여 */
-        ctx.beginPath();
-        ctx.rect(160, 10, 100, 40);
-        ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
-        ctx.stroke();
-        ctx.closePath();
+        function draw() {
+            // drawing code
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawBall();
+            x += dx;
+            y += dy;
+        }
+
+        setInterval(draw, 10);
+
+
+
+        /* step 1*/
+        // /* 사각형 */
+        // ctx.beginPath(); // start
+        // ctx.rect(20, 40, 50, 50); // 첫 번째, 두 번째는 캔버스 좌상단 모서리로부터의 좌표, 세 번째 네번째는 사각형 너비와 높이
+        // ctx.fillStyle = "#FF0000"; // fill 에서 칠해질 색상 값 지정
+        // ctx.fill();
+        // ctx.closePath(); // end
+        
+        // /* 원 */
+        // ctx.beginPath();
+        // ctx.arc(240, 160, 20, 0, Math.PI*2, false); // 6 개의 파라미터, 원의 중심을 가리키는 x, y 좌표, 원의 반지름, 시작 각도와 끝 각도, 그리는 방향(flase = 시계 방향, true = 반시계방향)
+        // ctx.fillStyle = "cyan";
+        // ctx.fill();
+        // ctx.closePath;
+
+        // /* stroke 로 외곽선 부여 */
+        // ctx.beginPath();
+        // ctx.rect(160, 10, 100, 40);
+        // ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+        // ctx.stroke();
+        // ctx.closePath();
 
     </script>
 </body>
