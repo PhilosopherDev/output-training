@@ -13,7 +13,7 @@
 <body>
 
     <canvas id="myCanvas" width="480" height="320"></canvas>
-
+    <div id="position" style="width: 100px; margin: 0 auto;"></div>
     <script>
         /* https://developer.mozilla.org/ko/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript#%EB%8B%A4%EC%9D%8C_%EB%8B%A8%EA%B3%84 */
         var canvas = document.getElementById("myCanvas");
@@ -22,11 +22,18 @@
         /* step 2*/
         var x = canvas.width/4;
         var y = canvas.height - 300;
-        var dx = 0.2;
-        var dy = 0.2;
+        var dx = 10;
+        var dy = 10;
+        var ballRadius = 10;
+
+        function showPosition(x, y) {
+            var position = document.querySelector("#position");
+            position.innerHTML = `<span>x: ${x}, y: ${y}</span>`
+        }
+
         function drawBall() {
             ctx.beginPath();
-            ctx.arc(x, y, 10, 0, Math.PI*2);
+            ctx.arc(x, y, ballRadius, 0, Math.PI*2);
             ctx.fillStyle = "#0095DD";
             ctx.fill();
             ctx.closePath();
@@ -36,11 +43,21 @@
             // drawing code
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             drawBall();
+            /* step 3 */
+            if (x + dx - ballRadius < 0 | x + dx > canvas.width - ballRadius) {
+                dx = -dx;
+            }
+            if (y + dy - ballRadius < 0 | y + dy > canvas.height - ballRadius) {
+                dy = -dy;
+            }
             x += dx;
             y += dy;
+            /* custom code */
+            showPosition(x, y);    
         }
+        
 
-        setInterval(draw, 10);
+        setInterval(draw, 500);
 
 
 
