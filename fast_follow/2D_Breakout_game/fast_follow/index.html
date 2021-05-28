@@ -32,7 +32,7 @@
 
         function drawPaddle() {
             ctx.beginPath();
-            ctx.rect(paddleX, canvas.height - paddleHeight*2, paddleWidth, paddleHeight);
+            ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
             ctx.fillStyle = "#0095DD";
             ctx.fill();
             ctx.closePath();
@@ -57,8 +57,8 @@
         /* step 2*/
         var x = canvas.width/4;
         var y = canvas.height - 300;
-        var dx = 10;
-        var dy = 10;
+        var dx = 2;
+        var dy = 2;
         var ballRadius = 10;
 
         function showPosition(x, y) {
@@ -81,34 +81,44 @@
             drawPaddle();
 
             /* step 3 */
-            if (x + dx - ballRadius < 0 | x + dx > canvas.width - ballRadius) {
+            if (x + dx - ballRadius < 0 || x + dx > canvas.width - ballRadius) {
                 dx = -dx;
             }
-            if (y + dy - ballRadius < 0 | y + dy > canvas.height - ballRadius) {
+            if (y + dy - ballRadius < 0) {
                 dy = -dy;
+            } else if (y + dy > canvas.height - ballRadius) {
+                /* step 5 */
+                if (x > paddleX && x < paddleX + paddleWidth) {
+                    dy = -dy;
+                } else {
+                    clearInterval(game);
+                    alert("GAME OVER");                    
+                    document.location.reload();
+                }
             }
-            x += dx;
-            y += dy;
             
             /* step 4*/
             if (rightPressed && paddleX < canvas.width - paddleWidth) {
-                paddleX += 20;
+                paddleX += 7;
                 if (paddleX > canvas.width - paddleWidth) {
                     paddleX = canvas.width - paddleWidth;
                 }
             }
             if (leftPressed && paddleX > 0) {
-                paddleX -= 20;
+                paddleX -= 7;
                 if (paddleX < 0) {
                     paddleX = 0;
                 }
             }
+
+            x += dx;
+            y += dy;
             
             /* custom code */
             showPosition(x, y);    
         }
         
-        setInterval(draw, 500);
+        const game = setInterval(draw, 20);
 
 
 
