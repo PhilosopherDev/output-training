@@ -1,7 +1,7 @@
 /** 간단한 컨트롤러. 모델과 뷰를 잇는다. */
 
-import getTodos from './getTodos.js';
-import view from './02/view.js';
+import getTodos from '../getTodos.js';
+import view from './view.js';
 
 const state = {
     todos: getTodos(), // random한 text: string, completed: boolean 로 구성된 객체를 가진 array, 곧 model
