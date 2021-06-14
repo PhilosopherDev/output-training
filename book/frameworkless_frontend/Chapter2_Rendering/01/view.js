@@ -53,7 +53,7 @@ export default (targetElement, state) => {
 
     /** filters 에 currentFilter: boolean 에 따라 selected class 넣고 빼주기 */
     Array
-        .from(filters.querySelector('li a'))
+        .from(filters.querySelectorAll('li a'))
         .forEach(a => {
             if (a.textContent === currentFilter) {
                 a.classList.add('selected');

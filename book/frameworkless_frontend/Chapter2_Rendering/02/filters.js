@@ -1,9 +1,6 @@
-export default (targetElement, {currentFilter}) => {
+export default (targetElement, {currentFilter}) => {    
     const newFilter = targetElement.cloneNode(true);
-
-    Array
-        .from(newFilter.querySelector('li a'))
-        .forEach(a => {
+    Array.from(newFilter.querySelectorAll('li a')).forEach(a => {
             if (a.textContent === currentFilter) {
                 a.classList.add('selected');
             } else {
