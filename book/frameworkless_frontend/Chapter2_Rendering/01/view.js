@@ -42,7 +42,8 @@ export default (targetElement, state) => {
         currentFilter
     } = state;
 
-    const element = targetElement.cloneNode(true); // <selection class='todoapp'> node 복사
+    const element = targetElement.cloneNode(true); // <selection class='todoapp'> node 복사, 새 가상 노드
+    /** 아래에서 DOM 조작 */
     const list = element.querySelector('.todo-list');
     const counter = element.querySelector('.todo-count');
     const filters = element.querySelector('.filters');
