@@ -9,6 +9,6 @@ const state = {
 const main = document.querySelector('.todoapp');
 
 window.requestAnimationFrame(() => {
-    const newMain = view(main, state);
+    const newMain = view(main, state); // view 에서 받는 내용은 node 와 새로운 값.
     main.replaceWith(newMain); // 새롭게 생성한 element로 기존 main을 바꿔치기.
 })
