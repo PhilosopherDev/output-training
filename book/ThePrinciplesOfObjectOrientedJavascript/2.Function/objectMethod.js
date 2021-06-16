@@ -73,4 +73,27 @@ sayNameForAll2.apply(global, [1, "global"]); // 1. global: Harry
 sayNameForAll2.apply(person3, [2, "person3"]); // 2. person3: Michael
 sayNameForAll2.apply(person4, [3, "person4"]); // 3. person4: Greg
 
-// bind
+// bind - 2가지 사용법
+function sayNameForAll3(label) {
+    console.log(label + ": " + this.name);
+}
+
+var person5 = {
+    name: "Dread"
+}
+
+var person6 = {
+    name: "Chovy"
+}
+
+var sayNameForPerson5 = sayNameForAll3.bind(person5); // this가 person5에 고정된 함수를 작성
+sayNameForPerson5("person5"); // person5: Dread
+
+var sayNameForPerson6 = sayNameForAll3.bind(person6, "person6"); // this가 person6에 고정되고 고정인수도 넣은 함수를 작성
+sayNameForPerson6(); // person6: Chovy
+
+// 메소드를 객체에 추가해도 'this'가 바뀌지 않는다. call 이나 apply 실행해도 안바뀐다.
+person5.sayName = sayNameForPerson6;
+person5.sayName("person5"); // person6: Chovy
+sayNameForPerson6.call(person5, "person5");  // person6: Chovy
+sayNameForPerson6.apply(person5, ["person5"]);  // person6: Chovy
