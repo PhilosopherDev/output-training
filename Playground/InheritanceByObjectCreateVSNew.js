@@ -70,3 +70,9 @@ var subByObjectCreate = new SubByObjectCreate("subByObjectCreate_instance");
 
 // subByObjectCreate.instanceFn(); // is not a function ** 핵심!! 
 subByObjectCreate.prototypeFn(); // prototype 객체애 있는 함수지롱 SubByObjectCreate_Instance
+console.log(subByObjectCreate.__proto__.constructor); // [Function: SubByObjectCreate]
+
+var person1 = new Person("Constructor?");
+console.log(person1.__proto__.constructor); // [Function: Person]
+console.log(SubByObjectCreate.prototype.constructor); // [Function: SubByObjectCreate]
+console.log(SubByObjectCreate.prototype.__proto__.constructor); // [Function: Person]
