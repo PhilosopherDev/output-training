@@ -46,3 +46,17 @@ var obj3 = {
 foo3.call(obj3); // 4
 a = 5;
 foo3(); // 5
+
+// 위 화살표 함수를 아래와 같이 사용하는 경우도 많다.
+function foo4() {
+    var self = this;
+    setTimeout(function() {
+        console.log(self.b);
+    }, 100);
+}
+
+var obj4 = {
+    b: 7
+}
+
+foo4.call(obj4); // 7
