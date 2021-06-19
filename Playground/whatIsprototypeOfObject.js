@@ -7,6 +7,10 @@ var obj = {};
 
 console.log(obj instanceof Object); // true;
 console.log(obj.constructor === Object); // true;
+console.log(obj.__proto__.constructor === Object); // true;
+console.log(obj.__proto__.constructor === obj.constructor); // true;
+console.log(obj.hasOwnProperty("constructor")); // false
+console.log(obj.__proto__.hasOwnProperty("constructor")); // true
 
 console.log(Object.constructor); // [Function: Function]
 console.log(Object.prototype.constructor); // [Function: Object]
