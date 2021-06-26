@@ -63,7 +63,7 @@ var CourtSession = (function() {
     return CourtSession;
 })();
 
-var courtSession1 = new CourtSession(new LannisterFactory());
+var courtSession1 = new CourtSession(new LannisterFactory()); // 인자로 넘겨주는 Factory 를 새로 만들어서 넘겨주면 또 새롭게 생성된다.
 courtSession1.complaintPresented({severity: 8});
 courtSession1.complaintPresented({severity: 12});
 
