@@ -24,7 +24,7 @@
     }
 
     Stack.prototype.peek = function() {
-        return this._element[this._element.length];
+        return this._element[this._element.length - 1];
     }
 
     Stack.prototype.isEmpty = function() {
