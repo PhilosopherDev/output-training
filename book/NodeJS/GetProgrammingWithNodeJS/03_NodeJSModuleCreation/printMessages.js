@@ -1,5 +1,5 @@
 const messageModule = require("./messages");
-// console.log(messageModule);
+console.log({messageModule});
 // messageModule.messages.forEach(m => console.log(m));
 
 /** 위 아래는 같은 코드, 꺼내는 방법의 차이일 뿐 */
@@ -10,7 +10,8 @@ const messageModule = require("./messages");
 /***/
 
 const messageModule2 = require("./messages2");
-console.log(module, module.children[0].exports, module.children[1].exports);
+console.log({messageModule2});
+// console.log(module, module.children[0].exports, module.children[1].exports);
 /**
 // from messages
 {
@@ -27,7 +28,7 @@ console.log(module, module.children[0].exports, module.children[1].exports);
  */
 
 exports.test = "hi";
-console.log(module);
+// console.log(module);
 /**
 
 결국 mudule 안에 들어있다. 
