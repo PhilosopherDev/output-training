@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+</head>
+    <style>
+        div {
+            border: black 2px solid;
+            flex-direction: row;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+<body>
+    <div id="1" draggable="true">abc</div>
+    <div id="2">def</div>
+    <script>
+        const div1 = document.getElementById("1");
+        const div2 = document.getElementById("2");
+        div1.addEventListener("dragstart", (e) => {
+            console.log("dragstart", e);
+            e.dataTransfer.setData("text/plain", e.target.id);
+        });
+        div1.addEventListener("dragend", (e) => {
+            console.log("dragend", e);
+        });
+        div2.addEventListener("ondrop", (e) => {
+            e.preventDefault();
+            const a = e.dataTransfer.getData("text/plain");
+            console.log("ondrop", {e, a});
+            e.target.appendChild(document.getElementById(data));
+        });
+
+        div2.addEventListener("ondragover", (e) => {
+            e.preventDefault();
+            const a = e.dataTransfer.getData("text/plain");
+            console.log("ondragover", {e, a});
+            e.target.appendChild(document.getElementById(data));
+        });
+    </script>
+</body>
+</html>
