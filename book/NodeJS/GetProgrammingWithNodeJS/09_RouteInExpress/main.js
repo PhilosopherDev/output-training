@@ -1,3 +1,6 @@
+const homeController = require("./Controller/homeController");
+const middlewareController = require("./Controller/middlewareController");
+const userSignUpProcessor = require("./Controller/userSignUpProcessor");
 const port = 3000,
     express = require("express"),
     app = express();
@@ -9,24 +12,13 @@ app.use(
 );
 app.use(express.json());
 
-app.use((req, res, next) => {
-    console.log(`request made to ${req.url}`);
-    console.log(`request query ${req.query}`);
-    console.log(`request query stringify: ${JSON.stringify(req.query)}`);
-    next();
-});
+app.use(middlewareController.checkReqBodyAndQuery);
 
-app.post("/", (req, res) => {    
-    console.log("req.body", req.body);
-    console.log("req.body stringify", JSON.stringify(req.body));
-    console.log("req.query", req.query);
-    res.send("POST successful!");
-});
+app.post("/", homeController.sendPostRes);
 
-app.get("/items/:vegetable", (req, res) => {
-    let veg = req.params.vegetable;
-    res.send(`This is the page for ${veg}`);
-});
+app.post("/signup", userSignUpProcessor.sendPostRes);
+
+app.get("/items/:vegetable", homeController.sendReqParam);
 
 app.listen(port, () => {
     console.log(`Server running on port: ${port}`);
