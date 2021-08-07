@@ -14,5 +14,9 @@ exports.sendPostRes = (req, res) => {
 
 exports.respondWithName = (req, res) => {
     let name = req.params.myName;
-    res.render("index", { name });
+    /**
+     * 넘기는 name 변수가 index.ejs 에서 사용하는 변수랑 동일해야 한다. 
+     * index.ejs 로 ejs 까지 명시 안해도 되는건 app.set 으로 viewengine 을 ejs 로 명시했기 때문이다.
+     */
+    res.render("index", { name }); 
 }
