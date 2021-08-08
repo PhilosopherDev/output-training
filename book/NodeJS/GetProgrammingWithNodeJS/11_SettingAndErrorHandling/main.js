@@ -1,6 +1,7 @@
 const homeController = require("./controllers/homeController");
 const middlewareController = require("./controllers/middlewareController");
 const userSignUpProcessor = require("./controllers/userSignUpProcessor");
+const errorController = require("./controllers/errorController");
 const port = 3000,
     express = require("express"),
     ejs = require("ejs"),
@@ -16,6 +17,9 @@ app.set("view engine", "ejs");
 /** express-ejs 의 변하지 않고 계속 나타나는 layout 관련 처리를 위한 라이브러리 사용 */
 app.use(layouts);
 
+/** static, 정적 파일이 들어있는 폴더의 절대경로를 가져온다 */
+app.use(express.static("public"));
+
 /** body-parser 에서 하던 부분이 express 에 포함됨 */
 app.use(
     express.urlencoded({
@@ -27,7 +31,9 @@ app.use(express.json());
 /** middleware 로 request body, query 확인하는 코드 */
 app.use(middlewareController.checkReqBodyAndQuery);
 
-/** routing */
+/** 
+ * routing
+ */ 
 
 /** app.use 로 해도 작동하고, app.get 으로 해도 작동한다. ejs 파일 app.render 로 보여주는 코드 */
 app.use("/name/:myName", homeController.respondWithName);
@@ -38,6 +44,14 @@ app.get("/items/:vegetable", homeController.sendReqParam);
 /** post route */
 app.post("/", homeController.sendPostRes);
 app.post("/signup", userSignUpProcessor.sendPostRes);
+
+/** 
+ * error handling
+ * route 다음에 위치해야한다. 
+ * 순서 중요, if / else 의 else 와 같은 역할
+ */ 
+app.use(errorController.respondNoResourceFound);
+app.use(errorController.resspondInternalError);
 
 /** server listen */
 app.listen(app.get("port"), () => {
