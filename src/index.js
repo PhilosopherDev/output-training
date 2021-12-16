@@ -1,8 +1,4 @@
-function test() {
-    console.log("webpack test");
-}
+import FirstComponent from "./firstComponent";
+const root = document.getElementById("root");
 
-test();
-
-var abcd = "webpack";
-console.log({abcd, test})
+ReactDOM.render(FirstComponent(), root);
