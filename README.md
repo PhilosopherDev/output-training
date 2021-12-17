@@ -29,3 +29,11 @@
 > 데이터에 대한 이해를 높여야한다.
 > 뿌리가 없는 채로 가지를 뻗어내려고 하는 느낌이다.
 > 좀 걸리더라도 기본기를 다지자.
+
+## 기록
+
+> 21.12.17 금
+>
+> > 1. Lexical scope 예제. 정적 스코프 = 함수 선언할 때 스코프 생성
+> > 2. Scope chain 과 prototype chain 을 확인하는 예제
+> > 3. Component repeat by array map, array fill

@@ -1,12 +1,15 @@
-import FirstComponent from "./ReactComponentTest/firstComponent";
-import SecondComponent from "./ReactComponentTest/secondComponent";
+import FirstComponent from "./view/firstComponent";
+import SecondComponent from "./view/secondComponent";
 
 const root = document.getElementById("root");
 
+var arr = new Array(10).fill(0);
+var arr2 = new Array(10).fill(<SecondComponent />);
+
 const MyComponent = (
     <div>
-        <FirstComponent />
-        <SecondComponent />
+        {arr.map(() => <FirstComponent />)}
+        {arr2}
     </div>
     );
 
