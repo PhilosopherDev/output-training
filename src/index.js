@@ -1,5 +1,5 @@
-import FirstComponent from "./firstComponent";
-import SecondComponent from "./secondComponent";
+import FirstComponent from "./ReactComponentTest/firstComponent";
+import SecondComponent from "./ReactComponentTest/secondComponent";
 
 const root = document.getElementById("root");
 
