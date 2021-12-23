@@ -31,3 +31,4 @@
 >
 > > 1. typescript, tsc 사용법 확인. ES5, ES2015 등으로 변경해서 코드 확인. decorator 어떻게 구현했는지 구경
 > > 2. 백준 node.js 로 문제풀기 위해 fs.readFileSync 활용법 1000번 문제로 확인
+> > 3. javascript Queue 자료구조 추가
