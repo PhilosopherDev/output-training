@@ -8,9 +8,11 @@ var Person = /** @class */ (function () {
         return "Hello, " + this.name;
     };
     Person.sayBye = function () {
+        console.log(this, this.name);
         return "Hello, " + this.name;
     };
     return Person;
 }());
 var person = new Person('Lee');
 console.log(person.sayHello());
+console.log(Person.sayBye());
