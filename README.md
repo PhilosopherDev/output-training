@@ -40,3 +40,8 @@
 > 2021.12.28 화
 >
 > > 1. Interactive developer 줄에 매달려 흔들리는 상자 프로젝트 clone coding
+>
+> 2021.12.29 수
+>
+> > 1. Programmers 스택/큐 - 프린터 - 배열의 shift() 사용하지 않고 실제 Queue 사용
+> > 2. Programmers 스택/큐 - 다리를 지나는 트럭 - 배열의 shift() 사용하지 않고 실제 Queue 사용
