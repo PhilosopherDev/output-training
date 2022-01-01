@@ -45,3 +45,7 @@
 >
 > > 1. Programmers 스택/큐 - 프린터 - 배열의 shift() 사용하지 않고 실제 Queue 사용
 > > 2. Programmers 스택/큐 - 다리를 지나는 트럭 - 배열의 shift() 사용하지 않고 실제 Queue 사용
+>
+> 2022.1.1 토
+>
+> > 1. 로또의 최고 순위와 최저 순위 https://programmers.co.kr/learn/courses/30/lessons/77484
