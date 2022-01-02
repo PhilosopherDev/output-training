@@ -43,8 +43,8 @@
 >
 > 2021.12.29 수
 >
-> > 1. Programmers 스택/큐 - 프린터 - 배열의 shift() 사용하지 않고 실제 Queue 사용
-> > 2. Programmers 스택/큐 - 다리를 지나는 트럭 - 배열의 shift() 사용하지 않고 실제 Queue 사용
+> > 1. 프린터 https://programmers.co.kr/learn/courses/30/lessons/42587 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
+> > 2. 다리를 지나는 트럭 https://programmers.co.kr/learn/courses/30/lessons/42583 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
 >
 > 2022.1.1 토
 >
