@@ -43,22 +43,22 @@
 >
 > 2021.12.29 수
 >
-> > 1. 프린터 https://programmers.co.kr/learn/courses/30/lessons/42587 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
-> > 2. 다리를 지나는 트럭 https://programmers.co.kr/learn/courses/30/lessons/42583 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
+> > 1. 프린터 https://philosopherprogrammer.com/49?category=912706 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
+> > 2. 다리를 지나는 트럭 https://philosopherprogrammer.com/50?category=912706 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
 >
 > 2022.1.1 토
 >
-> > 1. 로또의 최고 순위와 최저 순위 https://programmers.co.kr/learn/courses/30/lessons/77484
+> > 1. 로또의 최고 순위와 최저 순위 https://philosopherprogrammer.com/44?category=912706
 >
 > 2022.1.2 일
 >
-> > 1. 숫자 문자열과 영단어 https://programmers.co.kr/learn/courses/30/lessons/81301?language=javascript
+> > 1. 숫자 문자열과 영단어 https://philosopherprogrammer.com/45?category=912706
 >
 > 2022.1.3 월
 >
-> > 1. 카펫 https://programmers.co.kr/learn/courses/30/lessons/42842?language=javascript
+> > 1. 카펫 https://philosopherprogrammer.com/46?category=912706
 > > 2. MyStack linked list 로 직접 작성
-> > 3. 모의고사 https://programmers.co.kr/learn/courses/30/lessons/42840?language=javascript - 모델 추가될 경우를 신경써서 코딩
+> > 3. 모의고사 https://philosopherprogrammer.com/47?category=912706 - 모델 추가될 경우를 신경써서 코딩
 > > 4. MyQueue linked list 로 직접 작성
-> > 5. 소수 찾기 https://programmers.co.kr/learn/courses/30/lessons/42839?language=javascript - 순열 조합 소수찾기
+> > 5. 소수 찾기 https://philosopherprogrammer.com/48?category=912706 - 순열 조합 소수찾기
 > > 6. 순열과 조합 best practice 검색해서 저장

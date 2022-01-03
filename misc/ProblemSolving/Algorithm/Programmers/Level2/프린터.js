@@ -1,5 +1,7 @@
 /**
+ * 프린터
  * Queue
+ * https://programmers.co.kr/learn/courses/30/lessons/42587
  */
 
 class Node {
