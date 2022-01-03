@@ -53,3 +53,8 @@
 > 2022.1.2 일
 >
 > > 1. 숫자 문자열과 영단어 https://programmers.co.kr/learn/courses/30/lessons/81301?language=javascript
+>
+> 2022.1.3 월
+>
+> > 1. 카펫 https://programmers.co.kr/learn/courses/30/lessons/42842?language=javascript
+> > 2. MyStack linked list 로 작성
