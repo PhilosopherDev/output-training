@@ -39,26 +39,26 @@
 >
 > 2021.12.28 화
 >
-> > 1. Interactive developer 줄에 매달려 흔들리는 상자 프로젝트 clone coding
+> > 1. [Interactive developer 줄에 매달려 흔들리는 상자 프로젝트 clone coding](https://philosopherprogrammer.github.io/OutputTraining/misc/CloneCoding/InteractiveDeveloper/%EC%A4%84%EC%97%90_%EB%A7%A4%EB%8B%AC%EB%A0%A4_%ED%9D%94%EB%93%A4%EB%A6%AC%EB%8A%94_%EC%83%81%EC%9E%90/index.html)
 >
 > 2021.12.29 수
 >
-> > 1. 프린터 https://philosopherprogrammer.com/49?category=912706 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
-> > 2. 다리를 지나는 트럭 https://philosopherprogrammer.com/50?category=912706 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
+> > 1. [프린터](https://philosopherprogrammer.com/49?category=912706) - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
+> > 2. [다리를 지나는 트럭](https://philosopherprogrammer.com/50?category=912706) - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용
 >
 > 2022.1.1 토
 >
-> > 1. 로또의 최고 순위와 최저 순위 https://philosopherprogrammer.com/44?category=912706
+> > 1. [로또의 최고 순위와 최저 순위](https://philosopherprogrammer.com/44?category=912706)
 >
 > 2022.1.2 일
 >
-> > 1. 숫자 문자열과 영단어 https://philosopherprogrammer.com/45?category=912706
+> > 1. [숫자 문자열과 영단어](https://philosopherprogrammer.com/45?category=912706)
 >
 > 2022.1.3 월
 >
-> > 1. 카펫 https://philosopherprogrammer.com/46?category=912706
-> > 2. MyStack linked list 로 직접 작성
-> > 3. 모의고사 https://philosopherprogrammer.com/47?category=912706 - 모델 추가될 경우를 신경써서 코딩
-> > 4. MyQueue linked list 로 직접 작성
-> > 5. 소수 찾기 https://philosopherprogrammer.com/48?category=912706 - 순열 조합 소수찾기
-> > 6. 순열과 조합 best practice 검색해서 저장
+> > 1. [카펫](https://philosopherprogrammer.com/46?category=912706)
+> > 2. [MyStack linked list 로 직접 작성](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/DataStructure/Selfmade/My_Stack_Queue/MyStack.js)
+> > 3. [모의고사](https://philosopherprogrammer.com/47?category=912706) - 모델 추가될 경우를 신경써서 코딩
+> > 4. [MyQueue linked list 로 직접 작성](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/DataStructure/Selfmade/My_Stack_Queue/MyQueue.js)
+> > 5. [소수 찾기](https://philosopherprogrammer.com/48?category=912706) - 순열 조합 소수찾기
+> > 6. [순열과 조합 best practice 검색해서 저장](https://github.com/PhilosopherProgrammer/OutputTraining/tree/main/misc/ProblemSolving/DataStructure/BestPractice/Permutation_Combination)
