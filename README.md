@@ -57,5 +57,6 @@
 > 2022.1.3 월
 >
 > > 1. 카펫 https://programmers.co.kr/learn/courses/30/lessons/42842?language=javascript
-> > 2. MyStack linked list 로 작성
+> > 2. MyStack linked list 로 직접 작성
 > > 3. 모의고사 https://programmers.co.kr/learn/courses/30/lessons/42840?language=javascript - 모델 추가될 경우를 신경써서 코딩
+> > 4. MyQueue linked list 로 직접 작성
