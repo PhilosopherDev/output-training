@@ -60,3 +60,5 @@
 > > 2. MyStack linked list 로 직접 작성
 > > 3. 모의고사 https://programmers.co.kr/learn/courses/30/lessons/42840?language=javascript - 모델 추가될 경우를 신경써서 코딩
 > > 4. MyQueue linked list 로 직접 작성
+> > 5. 소수 찾기 https://programmers.co.kr/learn/courses/30/lessons/42839?language=javascript - 순열 조합 소수찾기
+> > 6. 순열과 조합 best practice 검색해서 저장
