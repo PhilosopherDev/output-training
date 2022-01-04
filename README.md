@@ -62,3 +62,8 @@
 > > 4. MyQueue linked list 로 직접 작성 [코드](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/DataStructure/Selfmade/My_Stack_Queue/MyQueue.js)
 > > 5. 소수 찾기 [문제 풀이](https://philosopherprogrammer.com/48?category=912706) - 순열 조합 소수찾기
 > > 6. 순열과 조합 best practice 검색해서 저장 [코드](https://github.com/PhilosopherProgrammer/OutputTraining/tree/main/misc/ProblemSolving/DataStructure/BestPractice/Permutation_Combination)
+>
+> 2022.1.4 화
+>
+> > 1. 없는 숫자 더하기
+> > 2. String localeCompare best practice [코드](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/DataStructure/BestPractice/Sort/localeCompare.js)
