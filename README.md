@@ -65,5 +65,6 @@
 >
 > 2022.1.4 화
 >
-> > 1. 없는 숫자 더하기
+> > 1. 없는 숫자 더하기 [문제 풀이](https://philosopherprogrammer.com/52)
 > > 2. String localeCompare best practice [코드](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/DataStructure/BestPractice/Sort/localeCompare.js)
+> > 3. 베스트 앨범 [문제 풀이](https://philosopherprogrammer.com/51)
