@@ -5,7 +5,7 @@
  * 
  */
 
-function solution(numbers) {
+export function solution(numbers) {
     const answer =  numbers.map((num) => num.toString()).sort((a, b) => {
         const pre = parseInt(a + b);
         const post = parseInt(b + a);
