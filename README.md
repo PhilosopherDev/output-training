@@ -71,3 +71,8 @@
 > > 4. 가장 큰 수 [[문제 풀이]](https://philosopherprogrammer.com/53)
 > >    1. 가장 큰 수 테스트 코드 추가 - 엣지 케이스 확인하는 습관 들이기 위해 [[테스트 코드]](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/Algorithm/Programmers/Level2/%EA%B0%80%EC%9E%A5%ED%81%B0%EC%88%98.test.js)
 > > 5. H-Index [[문제 풀이]](https://philosopherprogrammer.com/54)
+>
+> 2022.1.4 화
+>
+> > 1. 실패율 [[문제 풀이]](https://philosopherprogrammer.com/55)
+> > 2. 217_ContainsDuplicate [[문제 풀이]](https://philosopherprogrammer.com/56)
