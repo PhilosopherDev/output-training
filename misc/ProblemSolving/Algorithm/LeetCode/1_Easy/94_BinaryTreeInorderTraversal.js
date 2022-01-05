@@ -1,4 +1,6 @@
 /**
+ * 94. Binary Tree Inorder Traversal
+ * Easy
  * https://leetcode.com/problems/binary-tree-inorder-traversal/
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {

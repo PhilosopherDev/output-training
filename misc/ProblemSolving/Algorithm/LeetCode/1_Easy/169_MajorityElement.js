@@ -1,4 +1,6 @@
 /**
+ * 169. Majority Element
+ * Easy
  * https://leetcode.com/problems/majority-element/
  * @param {number[]} nums
  * @return {number}

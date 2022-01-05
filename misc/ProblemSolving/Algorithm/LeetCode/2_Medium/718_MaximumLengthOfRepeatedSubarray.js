@@ -1,4 +1,6 @@
 /**
+ * 718. Maximum Length of Repeated Subarray
+ * Medium
  * https://leetcode.com/problems/maximum-length-of-repeated-subarray/
  * https://leetcode.com/explore/challenge/card/july-leetcoding-challenge-2021/609/week-2-july-8th-july-14th/3807/
  * @param {number[]} nums1
