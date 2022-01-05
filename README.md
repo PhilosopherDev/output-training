@@ -2,7 +2,13 @@
 
 > 제대로 된 Front-end 개발자가 되기 위해 노력하는 공간
 
+- Overview
+  - [2021년 12월](#2021-12)
+  - [2022년 1월](#2022-1)
+
 ## 기록이자 증거
+
+### 2021-12
 
 > 2021.12.17 금
 >
@@ -45,7 +51,9 @@
 >
 > > 1. 프린터 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용 [[문제 풀이]](https://philosopherprogrammer.com/49?category=912706)
 > > 2. 다리를 지나는 트럭 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용 [[문제 풀이]](https://philosopherprogrammer.com/50?category=912706)
->
+
+### 2022-1
+
 > 2022.1.1 토
 >
 > > 1. 로또의 최고 순위와 최저 순위 [[문제 풀이]](https://philosopherprogrammer.com/44?category=912706)
@@ -72,7 +80,7 @@
 > >    1. 가장 큰 수 테스트 코드 추가 - 엣지 케이스 확인하는 습관 들이기 위해 [[테스트 코드]](https://github.com/PhilosopherProgrammer/OutputTraining/blob/main/misc/ProblemSolving/Algorithm/Programmers/Level2/%EA%B0%80%EC%9E%A5%ED%81%B0%EC%88%98.test.js)
 > > 5. H-Index [[문제 풀이]](https://philosopherprogrammer.com/54)
 >
-> 2022.1.4 화
+> 2022.1.5 수
 >
 > > 1. 실패율 [[문제 풀이]](https://philosopherprogrammer.com/55)
 > > 2. Contains Duplicate [[문제 풀이]](https://philosopherprogrammer.com/56)
