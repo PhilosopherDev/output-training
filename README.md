@@ -75,4 +75,5 @@
 > 2022.1.4 화
 >
 > > 1. 실패율 [[문제 풀이]](https://philosopherprogrammer.com/55)
-> > 2. 217_ContainsDuplicate [[문제 풀이]](https://philosopherprogrammer.com/56)
+> > 2. Contains Duplicate [[문제 풀이]](https://philosopherprogrammer.com/56)
+> > 3. Maximum SubArray [[문제 풀이]](https://philosopherprogrammer.com/57?category=945439)
