@@ -88,7 +88,7 @@
 > > 1. 실패율 [[문제 풀이]](https://philosopherprogrammer.com/55)
 > > 2. Contains Duplicate [[문제 풀이]](https://philosopherprogrammer.com/56)
 > > 3. Maximum SubArray [[문제 풀이]](https://philosopherprogrammer.com/57?category=945439)
-> > 4. NFT Preview Card Component Challenge 시작 [[Git 저장소 Link]](https://github.com/PhilosopherProgrammer/NFTPreviewCardComponent) [[Frontend Mentor Link]](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+> > 4. NFT Preview Card Component Challenge 시작 [[Git 저장소]](https://github.com/PhilosopherProgrammer/NFTPreviewCardComponent) [[Frontend Mentor]](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 >
 > 2022.1.6 목
 >
