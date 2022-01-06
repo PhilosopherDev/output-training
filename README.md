@@ -3,12 +3,13 @@
 > 제대로 된 Front-end 개발자가 되기 위해 노력하는 공간
 
 - Overview
-  - [2021년 12월](#2021-12)
-  - [2022년 1월](#2022-1)
+  - [2021년 12월](#2021년_12월)
+  - [2022년 1월](#2022년_1월)
+    - [2022년 1월 1주차](#2022년_1월_1주차)
 
 ## 기록이자 증거
 
-### 2021-12
+### 2021년\_12월
 
 > 2021.12.17 금
 >
@@ -52,7 +53,9 @@
 > > 1. 프린터 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용 [[문제 풀이]](https://philosopherprogrammer.com/49?category=912706)
 > > 2. 다리를 지나는 트럭 - 배열의 shift() 사용하지 않고 Linked-list 기반 Queue 사용 [[문제 풀이]](https://philosopherprogrammer.com/50?category=912706)
 
-### 2022-1
+### 2022년\_1월
+
+#### 2022년\_1월\_1주차
 
 > 2022.1.1 토
 >
@@ -86,3 +89,9 @@
 > > 2. Contains Duplicate [[문제 풀이]](https://philosopherprogrammer.com/56)
 > > 3. Maximum SubArray [[문제 풀이]](https://philosopherprogrammer.com/57?category=945439)
 > > 4. NFT Preview Card Component Challenge 시작 [[Git 저장소 Link]](https://github.com/PhilosopherProgrammer/NFTPreviewCardComponent) [[Frontend Mentor Link]](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+>
+> 2022.1.6 목
+>
+> > 1. Merge Sorted Array [[문제 풀이]](https://philosopherprogrammer.com/58)
+> > 2. 두 개 뽑아서 더하기 [[문제 풀이]](https://philosopherprogrammer.com/59)
+> > 3. 2016년 [[문제 풀이]](https://philosopherprogrammer.com/67)
