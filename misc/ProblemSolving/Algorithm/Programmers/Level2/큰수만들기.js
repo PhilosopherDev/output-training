@@ -61,7 +61,7 @@ function solution4(number, k) {
     var answer = [];
     let i = 0, j = 0;
     while(i < k) {
-        if (answer.length === 0 || answer[answer.length - 1] >= number[j]) {
+        if (answer.length === 0 || (number[j] && answer[answer.length - 1] >= number[j])) {
             answer.push(number[j]);
             j++;
         } else {
