@@ -95,3 +95,10 @@
 > > 2. 두 개 뽑아서 더하기 [[문제 풀이]](https://philosopherprogrammer.com/59)
 > > 3. 2016년 [[문제 풀이]](https://philosopherprogrammer.com/67)
 > > 4. 문자열 내림차순으로 배치하기 [[문제 풀이]](https://philosopherprogrammer.com/68)
+>
+> 2022.1.7 금
+>
+> > 1. 큰 수 만들기 [[문제 풀이]](https://philosopherprogrammer.com/69)
+> > 2. 구명보트 [[문제 풀이]](https://philosopherprogrammer.com/70)
+> > 3. Intersection of Two Arrays II [[문제 풀이]](https://philosopherprogrammer.com/71)
+> > 4. Best Time to Buy and Sell Stock [[문제 풀이]](https://philosopherprogrammer.com/72)
